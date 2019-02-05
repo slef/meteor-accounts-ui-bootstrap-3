@@ -24,7 +24,7 @@ ecmascript@0.12.4
 ecmascript-runtime@0.7.0
 ecmascript-runtime-client@0.8.0
 ecmascript-runtime-server@0.7.1
-edemaine:accounts-ui-bootstrap-3@1.2.91
+edemaine:accounts-ui-bootstrap-3@1.2.92
 ejson@1.1.0
 fetch@0.1.0
 geojson-utils@1.0.10
