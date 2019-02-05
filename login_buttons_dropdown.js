@@ -121,9 +121,6 @@
 				loginButtonsSession.set('inSignupFlow', true);
 				loginButtonsSession.set('inForgotPasswordFlow', false);
 
-				// force the ui to update so that we have the approprate fields to fill in
-				Meteor.flush();
-
 				// update new fields with appropriate defaults
 				if (username !== null) {
 					document.getElementById('login-username').value = username;
@@ -149,8 +146,6 @@
 			loginButtonsSession.set('inSignupFlow', false);
 			loginButtonsSession.set('inForgotPasswordFlow', true);
 
-			// force the ui to update so that we have the approprate fields to fill in
-			Meteor.flush();
 			//toggleDropdown();
 
 			// update new fields with appropriate defaults
@@ -171,9 +166,6 @@
 
 			loginButtonsSession.set('inSignupFlow', false);
 			loginButtonsSession.set('inForgotPasswordFlow', false);
-
-			// force the ui to update so that we have the approprate fields to fill in
-			Meteor.flush();
 
 			if (document.getElementById('login-username')){
 				document.getElementById('login-username').value = username;
@@ -371,7 +363,6 @@
 			event.stopPropagation();
 			loginButtonsSession.resetMessages();
 			Accounts._loginButtonsSession.set('inChangePasswordFlow', false);
-			Meteor.flush();
 		}
 	});
 
