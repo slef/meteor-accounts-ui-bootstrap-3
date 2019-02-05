@@ -1,8 +1,8 @@
 Package.describe({
-	name: 'techplex:accounts-ui-bootstrap-3',
-	summary: 'Bootstrap-styled accounts-ui with multi-language support. Based on ianmartorell/meteor-accounts-ui-bootstrap-3',
-	version: '1.2.90',
-	git: "https://github.com/TechplexEngineer/meteor-accounts-ui-bootstrap-3"
+	name: 'edemaine:accounts-ui-bootstrap-3',
+	summary: 'Bootstrap-styled accounts-ui with multi-language support',
+	version: '1.2.91',
+	git: "https://github.com/edemaine/meteor-accounts-ui-bootstrap-3"
 });
 
 Package.on_use(function (api) {

@@ -3,13 +3,22 @@ meteor-accounts-ui-bootstrap-3
 
 Meteor accounts-ui styled with Twitter's Bootstrap 3, now with multi-language support.
 
+This fork of [ian:accounts-ui-bootstrap-3](https://github.com/ianmartorell/meteor-accounts-ui-bootstrap-3)
+incorporates the following fixes:
+* [TechplexEngineer's fixes](https://github.com/TechplexEngineer/meteor-accounts-ui-bootstrap-3)
+  which in particular [remove the dependency on stylus](https://github.com/ianmartorell/meteor-accounts-ui-bootstrap-3/pull/234)
+* Remove old calls to `Meteor.flush()` to quell the errors
+  `Uncaught TypeError: Meteor.flush is not a function`
+  ([issue](https://github.com/ianmartorell/meteor-accounts-ui-bootstrap-3/issues/235),
+  [PR](https://github.com/ianmartorell/meteor-accounts-ui-bootstrap-3/pull/236))
+
 Installation
 ------------
 
 With Meteor >=0.9.0:
 
 ```sh
-$ meteor add ian:accounts-ui-bootstrap-3
+$ meteor add edemaine:accounts-ui-bootstrap-3
 ```
 
 [`twbs:bootstrap`](https://atmospherejs.com/twbs/bootstrap) is the recommended Meteor implementation of Twitter's Bootstrap, and is declared as a weak dependency in this package. [`nemo64:bootstrap`](https://atmospherejs.com/nemo64/bootstrap) is also supported. If you're using any other Bootstrap package, you're on your own regarding load order problems.
