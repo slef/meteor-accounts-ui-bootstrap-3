@@ -12,7 +12,6 @@
 		'click #login-name-link, click #login-sign-in-link': function(event) {
 			event.stopPropagation();
 			loginButtonsSession.set('dropdownVisible', true);
-			Meteor.flush();
 		},
 		'click .login-close': function() {
 			loginButtonsSession.closeDropdown();
@@ -33,7 +32,6 @@
 			event.stopPropagation();
 			loginButtonsSession.resetMessages();
 			loginButtonsSession.set('inChangePasswordFlow', true);
-			Meteor.flush();
 		}
 	});
 
