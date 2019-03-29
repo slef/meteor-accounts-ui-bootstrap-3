@@ -41,7 +41,7 @@
 		},
 
 	        loggedInTextClass: function() {
-  		        return Accounts.ui._options[loggedInTextClass];
+  		        return Accounts.ui._options.loggedInTextClass;
 		},
 	    
 		inChangePasswordFlow: function() {
@@ -200,12 +200,12 @@
 	Template._loginButtonsLoggedOutDropdown.helpers({
 		forbidClientAccountCreation: function() {
 			return Accounts._options.forbidClientAccountCreation;
-		}
+		},
 	        loggedOutTextClass: function() {
-  		        return Accounts.ui._options[loggedOutTextClass];
+  		        return Accounts.ui._options.loggedOutTextClass;
 		},
 	        loggedOutIconHtml: function() {
-  		        return Accounts.ui._options[loggedOutIconHtml];
+  		        return Accounts.ui._options.loggedOutIconHtml;
 		},
 	});
 
