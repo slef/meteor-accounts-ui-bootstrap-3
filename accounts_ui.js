@@ -10,7 +10,10 @@ if (!Accounts.ui._options) {
 		forceApprovalPrompt: {},
 		forceEmailLowercase: false,
 		forceUsernameLowercase: false,
-		forcePasswordLowercase: false
+	        forcePasswordLowercase: false,
+	        loggedInTextClass: "",
+	        loggedOutTextClass: "",
+	        loggedOutIconHtml: ""
 	};
 }
 
